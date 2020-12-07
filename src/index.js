@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 import { Match } from './models/match';
 import { Iam } from './models/iam';
 import { Puntos } from './models/punto';
-mongoose.connect('mongodb+srv://root:3iHJ1cFIVfO9oQ7K@cluster0.weaku.mongodb.net/sepico', { useNewUrlParser: true });
+mongoose.connect('', { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
@@ -20,7 +20,7 @@ const options = {
 	},
 	identity: {
 		username: 'SePicoBot',
-		password: 'oauth:5rpgi3x9585ot3g6qzhn718w76qav4'
+		password: ''
 	},
 	channels: ['jmellera']
 }
